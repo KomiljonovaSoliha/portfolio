@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    height: 200px;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 25px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left h1 {
+    width: 400px;
+}
+
+.left p {
+    width: 497px;
+    font-weight: 400;
+}
+
+.right img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.box button {
+    background-color: #4dc0e3;
+    color: white;
+    border: none;
+    padding: 6px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: center;
+    background-color: #EDF7FA;
+    height: 350px;
+}
+
+.halqa {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textleft,
+.textright {
+    width: 418px;
+    height: 270px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textleft h1,
+.textright h1 {
+    font-size: 25px;
+    width: 374px;
+}
+
+.secondsection {
+    margin-top: 50px;
+}
+
+.textright p,
+.textleft p {
+    width: 350px;
+}
+
+.out {
+    display: flex;
+    justify-content: center;
+    gap: 41rem;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.out a {
+    text-decoration: none;
+}
+
+.halqa2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rasm {
+    display: flex;
+    border-bottom: 2px solid #E0E0E0;
+    padding: 10px;
+}
+
+.rasmtext {
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.rasmtext h1 {
+    font-weight: 700;
+    color: #21243D;
+}
+
+.rasmtext p {
+    width: 560px;
+}
+
+.btn {
+    display: flex;
+    color: #8695A4;
+    gap: 25px;
+    padding: 0;
+}
+
+.btn button {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+
+}
+
+.footerlinks {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem;
+    gap: 15px;
+}
+
+
+.logo i {
+    font-size: 50px;
+}
+
+
+@media(max-width:993px){
+    .firstsection{
+        height: 400px;
+        
+    }
+    
+    .rasmtext p{
+        width: 400px;
+    }
+}
+@media (max-width:690px){
+    .left p{
+        width: 300px;  
+    }
+    .halqa{
+        flex-direction: column;
+    }
+    .firstsection{
+        height: 630px;
+        padding: 30px;
+    }
+    .out{
+        display: none;
+    }
+    .rasmtext p{
+        width: 300px;
+    }
+}
+@media (max-width:398px){
+    .box{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .left{
+        text-align: center;
+        }
+    .left p {
+        text-align: center;
+       margin-left: 50px;
+    }
+    .left button{
+       margin-left: 8rem;
+    }
+    
+    .firstsection{
+        width: 100%;
+    }
+    .textleft,.textright{
+        gap: 10px;
+    }
+    .textleft,.textright{
+        width: 100%;
+    }
+    .textleft h1  ,.textright h1 {
+        width: 100%;
+    }
+    .textleft p ,.textright p{
+        width: 100%;
+
+    }
+    .rasm{
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+        gap: 10px;
+    }
+    .footerlinks p{
+        width: 270px;
+    }
+
+}
